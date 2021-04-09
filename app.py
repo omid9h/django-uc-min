@@ -36,7 +36,40 @@ app = get_wsgi_application()
 
 
 MAIN_HTML = Template(
-    """ """
+    """
+<html>
+  <head>
+    <title>The Company</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+     *{
+       margin: 0;
+       padding: 0;
+       box-sizing: border-box;
+     }
+     html,body{
+       display: grid;
+       height: 100%;
+       width: 100%;
+       place-items: center;
+     }
+     .wrapper{
+       color: #3d3a2c;
+       max-width: 900px;
+       text-align: center;
+       padding: 0 50px;
+     }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>The Company is under construction</h1>
+      <br>
+      <h3>Contact via hi@thecompany.com <h3>
+    </div>
+  </body>
+</html>
+"""
 )
 
 
